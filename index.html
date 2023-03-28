@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>HTML formulář</title>
+        <title>HTML Form</title>
         <meta charset="UTF-8" />
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
         <style>
@@ -68,31 +68,31 @@
         </style>
     </head>
     <body>
-        <h1>Registrační formulář na kurz HTML</h1>
-        <form action="podekovani.html" method="GET">
-            <label for="jmeno" class="nazev">Jméno:</label><br />
+        <h1>HTML Course Registration</h1>
+        <form action="submit.html" method="GET">
+            <label for="jmeno" class="nazev">Name:</label><br />
             <input type="text" id="jmeno" name="jmeno" required /><br />
 
-            <label for="prijmeni" class="nazev">Příjmení:</label><br />
+            <label for="prijmeni" class="nazev">Surname:</label><br />
             <input type="text" id="prijmeni" name="prijmeni" required /><br />
 
-            <label for="datum_narozeni" class="nazev">Datum narození:</label><br />
+            <label for="datum_narozeni" class="nazev">Date of birth:</label><br />
             <input type="date" id="datum_narozeni" name="datum_narozeni" required /><br />
 
-            <label for="pohlavi" class="nazev">Pohlaví:</label><br />
+            <label for="pohlavi" class="nazev">Sex:</label><br />
             <input type="radio" id="muz" name="pohlavi" required />
-            <label for="muz">Muž</label>
+            <label for="muz">Man</label>
             <input type="radio" id="zena" name="pohlavi" required />
-            <label for="zena">Žena</label><br />
+            <label for="zena">Woman</label><br />
 
-            <label for="znalost_HTML" class="nazev">Znalost HTML:</label><br />
+            <label for="znalost_HTML" class="nazev">Knowledge of HTML:</label><br />
             <select name="znalost_HTML" id="znalost_HTML" required>
-                <option value="zacatecnik">Začátečník</option>
-                <option value="pokrocily">Pokročilý</option>
+                <option value="zacatecnik">Beginner</option>
+                <option value="pokrocily">Advanced</option>
                 <option value="expert">Expert</option></select
             ><br />
 
-            <label for="jazyky" class="nazev">Jazyky které ovládám:</label><br />
+            <label for="jazyky" class="nazev">Other languages:</label><br />
             <input type="checkbox" id="HTML" name="jazyky" value="HTML" />
             <label for="HTML">HTML</label><br />
             <input type="checkbox" id="Java" name="jazyky" value="Java" />
@@ -104,8 +104,8 @@
             <input type="checkbox" id="C++" name="jazyky" value="C++" />
             <label for="C++">C++</label><br />
 
-            <input type="submit" value="Odeslat" />
-            <input type="reset" value="Smazat" />
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
         </form>
     </body>
 </html>
